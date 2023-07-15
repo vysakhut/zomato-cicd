@@ -1,3 +1,5 @@
+provider "aws" {}
+
 resource "aws_security_group" "zomato-webserver" {
   name        = "${var.project_name}-${var.project_environment}-webserver"
   description = "Allow web traffic"
